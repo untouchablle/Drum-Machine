@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+  }
+  
+  body {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 28px;
+   
+    
+  }
+  
+  #drum-machine {
+    margin: 15px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .wrapper {
+      width: 100%;
+      display: grid;
+      padding: 10px;
+      grid-gap: 15px;
+      margin-top: 40px;
+      border-radius: 40px;
+      border: 8px solid black;
+      grid-template-columns: 1fr;
+
+      background-image: linear-gradient(
+  -225deg
+  , #0c773c 35%, #b9deff 100%);
+  }
+  
+  .keyboard {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .keyboard .drum-pad {
+    width:120px;
+    height: 70px;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #d7f3db;
+    transition: all .3s ease-in-out
+  }
+  
+  @media(min-width: 768px){
+    .wrapper {
+        width: 680px;
+    }
+  }
+  
+  @media(min-width: 992px){
+    .wrapper {
+       grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .control {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  
+  .control > button,
+  .control > input,
+  .control > h2 {
+    margin-bottom: 10px;
+    color: #f8f6f6;
+    
+  }
+  
+  .control button{
+    border: rgb(235, 240, 235);
+    color: #e7f5e8;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 150px;
+    background-color: #0d7066;
+    border: 2px solid black;
+
+  }
+
+
+
+
+
+.logo{
+      text-align: right;
+      
+      color: #0d7066;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  
+    
+ 
